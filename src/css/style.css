@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background: #f3dada;
+}
+.container{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+a{
+    text-decoration: none;
+}
+header{
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    color: #333;
+}
+header h1{
+    font-size: 60px;
+    font-weight: 400;
+}
+header .main-p{
+    width: 450px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.hero-info{
+    max-width: 45%;
+}
+.get{
+    padding: 10px 25px;
+    border-radius: 35px;
+    background: #333;
+    color: #fff;
+    border: 1px solid #333;
+    transition: .3s;
+}
+.get:hover{
+    background: #fff;
+    color: #333;
+    border: 1px solid #333;
+}
+.like{
+    color: #fff;
+    padding: 22px;
+    background: #3088FF;
+    border-radius: 10px;
+}
+.heart{
+    align-items: center;
+    width: 340px;
+    cursor: pointer;
+    display: flex;
+    transition: .3s;
+    /* border: 2px solid #3088FF; */
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 0 10px;
+    gap: 20px;
+    font-size: 13px;
+}
+.heart:hover{
+    transform: scale(110%);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.heart:active{
+    transform: scale(100%);
+}
+::selection{
+    background-color: #f3dada;
+}
+.hero-tools{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.footer-img{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.footer-img img{
+    transition: .3s;
+}
+.footer-img img:hover{
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 1320px) {
+    header{
+        flex-wrap: wrap;
+    }
+    .hero-info{
+        margin: auto;
+        width: 700px;
+    }
+    .heart{
+        margin: 50px auto 0;
+        width: 500px;
+        padding: 0 0 0 10px;
+    }
+    .footer-img img{
+        display: block;
+    }
+}
+@media (max-width: 1110px) {
+    .container{
+        padding-right: 34px;
+    }
+    .hero-info{
+        margin: auto;
+    }
+    .hero-tools{
+        margin: auto;
+    }
+    .heart{
+        margin: auto;
+        width: 100%;
+    }    
+    .footer-img{
+        display: block;
+    }
+    .footer-img img{
+        display: inline-block;
+    }
+}
