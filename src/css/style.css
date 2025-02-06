@@ -92,7 +92,65 @@ header .main-p{
 .footer-img img:hover{
     transform: translateY(-20px);
     cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
+.footer-img img:active{
+    transform: translateY(2px);
+}
+.disabled{
+    align-items: center;
+    width: 340px;
+    display: flex;
+    /* border: 2px solid #3088FF; */
+    background-color: #ddd;
+    border-radius: 15px;
+    padding: 0 10px;
+    gap: 20px;
+    opacity: .8;
+    position: relative;
+    font-size: 13px;
+    cursor: not-allowed;
+}
+.message {
+    opacity: 0; 
+    visibility: hidden;
+    position: absolute;
+    top: -105px;
+    left: 100px;
+    overflow: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.disabled:hover .message {
+    opacity: 1;     
+    visibility: visible; 
+}
+.message p{
+    position: absolute;
+    top: 10px;
+    left: -5px;
+    padding: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -128,6 +186,9 @@ header .main-p{
         margin: auto;
         width: 100%;
     }    
+    .disabled{
+        width: 100%;
+    }
     .footer-img{
         display: block;
     }
